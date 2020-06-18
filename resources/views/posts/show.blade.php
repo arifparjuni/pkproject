@@ -2,6 +2,11 @@
 
 @section('content')
     <a href="{{ url('/posts') }}">Go Back</a>
+    <div class="row">
+        <div class="col-md-12">
+            <img style="width: 100%" src="/storage/cover_images/{{$post->cover_image}}" alt="">
+        </div>
+    </div>
     <h1>{{$post->title}}</h1>
     <p>{{$post->body}}</p>
     <hr>
